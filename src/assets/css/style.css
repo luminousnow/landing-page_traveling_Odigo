@@ -355,11 +355,10 @@ fieldset {
   margin-bottom: 130px;
 
   list-style: none;
+  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
 }
 
 .trip__card-link {
-  position: relative;
-  overflow: hidden;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -368,6 +367,7 @@ fieldset {
   justify-content: flex-start;
 
   text-decoration: none;
+  overflow: hidden;
 }
 
 .trip__card:nth-child(-n + 2) .trip__card-link {
@@ -384,7 +384,8 @@ fieldset {
   height: 100%;
 
   background: rgba(21, 24, 36, 0.4);
-  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+
+  z-index: 1;
 }
 
 .trip__card-img {
@@ -392,11 +393,17 @@ fieldset {
   height: 283px;
 
   object-fit: cover;
+  transition: all 3000ms ease;
 }
 
 .trip__card:nth-child(-n + 2) .trip__card-img {
   width: calc((1262px - 10px) / 2);
   height: 354px;
+}
+
+.trip__card-link:hover .trip__card-img,
+.trip__card-link:focus .trip__card-img {
+  transform: scale(1.2) rotate(2deg);
 }
 
 .trip__card-title {
@@ -409,7 +416,7 @@ fieldset {
   font-size: 50px;
   line-height: 1.2;
   color: #ffffff;
-  z-index: 1;
+  z-index: 2;
 }
 
 .trip__demo-card {
