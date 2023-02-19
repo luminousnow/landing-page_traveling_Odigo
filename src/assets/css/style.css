@@ -78,6 +78,14 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+
+  transition: all 750ms ease;
+  z-index: 999;
+}
+
+.scrolling {
+  background: #0e1d28;
+  opacity: 0.9;
 }
 
 .navigation {
@@ -85,7 +93,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 55px 0 0;
+  padding: 55px 0 30px;
 }
 
 .logo__img {
