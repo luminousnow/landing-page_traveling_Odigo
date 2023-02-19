@@ -1,2 +1,2 @@
-# -lending-page-Traveling.-Odigo
+# lending-page_traveling_Odigo
 html5, css, js
