@@ -795,7 +795,7 @@ body {
   background: #0053ba;
 }
 
-/* footer styles */
+/* video-content styles */
 
 .video {
   position: relative;
@@ -815,7 +815,9 @@ body {
   height: 100%;
 }
 
-.footer__wrapper {
+/* footer styles */
+
+.footer {
   background: #0e1d28;
 }
 
