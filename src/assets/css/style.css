@@ -997,12 +997,12 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   padding: 120px 0;
+  justify-content: space-between;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footer__menu {
     align-items: center;
-    justify-content: space-between;
   }
 }
 
@@ -1012,8 +1012,13 @@ body {
 
 @media screen and (min-width: 768px) {
   .footer__logo-img {
+    width: 110px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer__logo-img {
     width: 170px;
-    margin-right: 356px;
   }
 }
 
@@ -1034,8 +1039,14 @@ body {
   }
 
   .navi-group:not(:last-child) {
-    margin-right: 140px;
+    margin-right: 60px;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .navi-group:not(:last-child) {
+    margin-right: 140px;
   }
 }
 
