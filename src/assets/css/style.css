@@ -539,13 +539,13 @@ body {
 .trip__inner {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   margin-bottom: 45px;
 }
 
 @media screen and (min-width: 768px) {
   .trip__inner {
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 45px;
@@ -587,16 +587,16 @@ body {
   box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
 }
 
-@media screen and (max-width: 767px) {
-  .trip__card:not(:last-child) {
-    margin-bottom: 10px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .trip__list {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .trip__card:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
@@ -646,11 +646,20 @@ body {
 
 @media screen and (min-width: 768px) {
   .trip__card-img {
+    width: 225px;
+    height: 283px;
+  }
+
+  .trip__card:nth-child(-n + 2) .trip__card-img {
+    width: calc((700px - 10px) / 2);
+    height: 354px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .trip__card-img {
     width: 415px;
     height: 283px;
-
-    object-fit: cover;
-    transition: all 3000ms ease;
   }
 
   .trip__card:nth-child(-n + 2) .trip__card-img {
@@ -680,8 +689,12 @@ body {
 
 @media screen and (min-width: 768px) {
   .trip__card-title {
-    padding: 30px;
+    font-size: 40px;
+  }
+}
 
+@media screen and (min-width: 1440px) {
+  .trip__card-title {
     font-size: 50px;
   }
 }
@@ -713,6 +726,16 @@ body {
 
 @media screen and (min-width: 768px) {
   .trip__demo-img {
+    width: 350px;
+    height: 354px;
+    margin-bottom: 0px;
+
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .trip__demo-img {
     width: 597px;
     height: 354px;
   }
@@ -726,6 +749,14 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .trip__demo-description {
+    justify-content: center;
+    width: 610px;
+    padding: 100px 47px 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
   .trip__demo-description {
     justify-content: center;
     width: 610px;
@@ -747,7 +778,18 @@ body {
     top: 0;
     left: 0;
 
+    margin-bottom: 0px;
+    padding: 0 47px;
+
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .trip__demo-title {
     padding: 26px 47px;
+
+    font-size: 30px;
   }
 }
 
