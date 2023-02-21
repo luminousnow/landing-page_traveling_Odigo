@@ -835,7 +835,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 
   list-style: none;
 }
@@ -845,6 +845,20 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .places__list {
+    justify-content: space-between;
+  }
+
+  .place {
+    width: 330px;
+  }
+
+  .place:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 58px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
   .place {
     width: 386px;
   }
