@@ -330,6 +330,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .form fieldset {
@@ -342,7 +343,7 @@ body {
   border: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .form fieldset {
     display: flex;
     flex-direction: row;
@@ -353,7 +354,6 @@ body {
 
 .form__input {
   min-width: 280px;
-  /* margin-right: 60px; */
   padding-left: 45px;
   padding-bottom: 25px;
 
@@ -369,21 +369,22 @@ body {
   outline-style: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1439px) {
   .form__input {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .form__input {
+    min-width: 400px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
   .form__input {
     min-width: 300px;
     margin-right: 60px;
-    padding-left: 45px;
-    padding-bottom: 25px;
-
-    font-weight: 400;
-    font-size: 18px;
   }
 }
 
@@ -457,6 +458,14 @@ body {
 
 @media screen and (min-width: 768px) {
   .benefits__title {
+    padding: 60px 40px;
+
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .benefits__title {
     padding: 93px 100px 88px;
 
     font-size: 35px;
@@ -478,13 +487,13 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1439px) {
   .benefits__item:not(:last-child) {
     margin-bottom: 80px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .benefits__item {
     width: 317px;
   }
