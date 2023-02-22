@@ -16,11 +16,16 @@ if (viewportWidth < 768) {
   const mobileMenuButton = document.querySelector(".mobile-menu");
   const openButton = document.querySelector(".mobile-menu__open-icon");
   const closeButton = document.querySelector(".mobile-menu__close-button");
+  const links = document.querySelectorAll(".nav__link");
 
   // слухаємо клік по кнопці меню
   mobileMenuButton.addEventListener("click", onMenuClick);
   // слухаємо натискання клавіші Esc
   document.addEventListener("keydown", onEsc);
+  // слухаємо клік по пункту меню
+  links.forEach((each) => {
+    each.addEventListener("click", onMenuLinkClick);
+  });
 
   function onMenuClick() {
     nav.classList.toggle("nav__open");
@@ -36,5 +41,12 @@ if (viewportWidth < 768) {
       closeButton.classList.remove("mobile-menu__close-button--active");
       body.classList.toggle("body__lock");
     }
+  }
+
+  function onMenuLinkClick() {
+    nav.classList.remove("nav__open");
+    openButton.classList.add("mobile-menu__open-icon--active");
+    closeButton.classList.remove("mobile-menu__close-button--active");
+    body.classList.remove("body__lock");
   }
 }

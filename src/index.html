@@ -31,14 +31,16 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="" class="nav__link">Articles</a>
+                <a href="#articles" class="nav__link js-scroll">Articles</a>
               </li>
               <li class="nav__item">
-                <a href="" class="nav__link">Locations</a>
+                <a href="#locations" class="nav__link js-scroll">Locations</a>
               </li>
-              <li class="nav__item"><a href="" class="nav__link">Videos</a></li>
               <li class="nav__item">
-                <a href="" class="nav__link">Sign in</a>
+                <a href="#videos" class="nav__link js-scroll">Videos</a>
+              </li>
+              <li class="nav__item">
+                <a href="#sign-in" class="nav__link js-scroll">Sign in</a>
               </li>
             </ul>
           </nav>
@@ -57,7 +59,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="hero">
+      <section class="hero" id="sign-in">
         <div class="container thin">
           <h1 class="hero__title">Discover Amazing places in Japan</h1>
           <p class="hero__text">
@@ -133,7 +135,7 @@
           </div>
         </div>
       </section>
-      <section class="trip">
+      <section class="trip" id="articles">
         <div class="container wide">
           <div class="trip__inner">
             <h2 class="section__title">Get inspired for your next trip</h2>
@@ -242,7 +244,7 @@
           </ul>
         </div>
       </section>
-      <section class="top-places">
+      <section class="top-places" id="locations">
         <div class="container wide">
           <h2 class="section__title">Today top places to visit</h2>
           <ul class="places__list">
@@ -381,7 +383,7 @@
           </ul>
         </div>
       </section>
-      <section class="video-content">
+      <section class="video-content" id="videos">
         <div class="video">
           <div class="video__resizer"></div>
           <iframe
@@ -460,5 +462,6 @@
       </div>
     </footer>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/smooth-scroll.js"></script>
   </body>
 </html>
