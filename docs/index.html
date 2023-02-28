@@ -1,17 +1,104 @@
 <!DOCTYPE html>
 <html lang="en" class="page">
-  @include('partials/head.html')
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="favicon/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="favicon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="favicon/favicon-16x16.png"
+  />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="msapplication-config" content="favicon/browserconfig.xml" />
+  <meta name="theme-color" content="#ffffff" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="preload"
+    href="fonts/lato-v23-latin-300.woff"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/lato-v23-latin-regular.woff"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/lato-v23-latin-700.woff"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/lato-v23-latin-300.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/lato-v23-latin-regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/lato-v23-latin-700.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/main.js"></script>
+
+  <title>Discover Amazing places in Japan</title>
+</head>
 
   <body class="page__body">
     <!-- <div class="site-container">
-    @include('partials/header.html')
+    <header class="header">
+  <div class="container"></div>
+</header>
+
     <main class="main">
       <picture>
         <source srcset="img/cover.webp" type="image/webp">
         <img loading="lazy" src="img/cover.jpg" class="image" width="300" height="300" alt="Обложка канала MaxGraph">
       </picture>
     </main>
-    @include('partials/footer.html')
+    <footer class="footer">
+  <div class="container"></div>
+</footer>
+
   </div> -->
 
     <header class="header">
@@ -60,11 +147,11 @@
     <main class="main">
       <section class="hero" id="sign-in">
         <div class="container thin">
-          <h1 class="hero__title">Discover Amazing places in Japan</h1>
+          <h1 class="hero__title">Discover Amazing places in Japan</h1>
           <p class="hero__text">
-            Jump off balcony, onto stranger's head. Chase ball of string hide
-            when guests come over. Being gorgeous with belly side up i could pee
-            on this if i had the energy but under the bed, for attack the child,
+            Jump off balcony, onto stranger’s head. Chase ball of string hide
+            when guests come over. Being gorgeous with belly side up i could pee
+            on this if i had the energy but under the bed, for attack the child,
             open the door
           </p>
           <form class="form">
@@ -89,7 +176,7 @@
       <section class="benefits">
         <div class="benefits__wrapper container wide">
           <div class="container thin">
-            <h2 class="benefits__title">Benefits of Odigo</h2>
+            <h2 class="benefits__title">Benefits of Odigo</h2>
             <ul class="benefits__list">
               <li class="benefits__item">
                 <img
@@ -97,9 +184,9 @@
                   alt="Welcome to Odigo!"
                   class="benefits__icon"
                 />
-                <h3 class="benefits__card-title">Welcome to Odigo!</h3>
+                <h3 class="benefits__card-title">Welcome to Odigo!</h3>
                 <p class="benefits__info">
-                  Jump off balcony, onto stranger's head. Chase ball of string
+                  Jump off balcony, onto stranger’s head. Chase ball of string
                   hide when guests come over.
                 </p>
                 <a href="#" class="benefits__link">Learn more</a>
@@ -112,7 +199,7 @@
                 />
                 <h3 class="benefits__card-title">Your Personal Japan Guide</h3>
                 <p class="benefits__info">
-                  Jump off balcony, onto stranger's head. Chase ball of string
+                  Jump off balcony, onto stranger’s head. Chase ball of string
                   hide when guests come over.
                 </p>
                 <a href="#" class="benefits__link">Learn more</a>
@@ -125,7 +212,7 @@
                 />
                 <h3 class="benefits__card-title">Promoting Local Businesses</h3>
                 <p class="benefits__info">
-                  Jump off balcony, onto stranger's head. Chase ball of string
+                  Jump off balcony, onto stranger’s head. Chase ball of string
                   hide when guests come over.
                 </p>
                 <a href="#" class="benefits__link">Learn more</a>
@@ -216,11 +303,11 @@
                 class="trip__demo-img"
               />
               <div class="trip__demo-description">
-                <h3 class="trip__demo-title">Prefecture in Focus: Tottori</h3>
+                <h3 class="trip__demo-title">Prefecture in Focus: Tottori</h3>
                 <p class="trip__demo-info">
-                  Jump off balcony, onto stranger's head. Chase ball of string
+                  Jump off balcony, onto stranger’s head. Chase ball of string
                   hide when guests come over. Being gorgeous with belly side up
-                  i could pee on this if i had the energy but under the bed, for
+                  i could pee on this if i had the energy but under the bed, for
                   attack the child, open the door
                 </p>
                 <a href="" class="trip__demo-view-more">View prefecture</a>
@@ -239,9 +326,9 @@
                   Kyoto’s Arashiyama
                 </h3>
                 <p class="trip__demo-info">
-                  Jump off balcony, onto stranger's head. Chase ball of string
+                  Jump off balcony, onto stranger’s head. Chase ball of string
                   hide when guests come over. Being gorgeous with belly side up
-                  i could pee on this if i had the energy but under the bed, for
+                  i could pee on this if i had the energy but under the bed, for
                   attack the child, open the door
                 </p>
                 <a href="" class="trip__demo-view-more">View neighborhood</a>
@@ -252,7 +339,7 @@
       </section>
       <section class="top-places" id="locations">
         <div class="container wide">
-          <h2 class="section__title">Today top places to visit</h2>
+          <h2 class="section__title">Today top places to visit</h2>
           <ul class="places__list">
             <li class="place">
               <div class="place__thumb">
@@ -271,9 +358,9 @@
                 </div>
               </div>
               <p class="place__info">
-                Jump off balcony, onto stranger's head. Chase ball of string
-                hide when guests come over. Being gorgeous with belly side up i
-                could pee on this.
+                Jump off balcony, onto stranger’s head. Chase ball of string
+                hide when guests come over. Being gorgeous with belly side up i
+                could pee on this.
               </p>
               <a href="" class="place__view-more-link">See more</a>
             </li>
@@ -294,9 +381,9 @@
                 </div>
               </div>
               <p class="place__info">
-                Jump off balcony, onto stranger's head. Chase ball of string
-                hide when guests come over. Being gorgeous with belly side up i
-                could pee on this.
+                Jump off balcony, onto stranger’s head. Chase ball of string
+                hide when guests come over. Being gorgeous with belly side up i
+                could pee on this.
               </p>
               <a href="" class="place__view-more-link">See more</a>
             </li>
@@ -317,9 +404,9 @@
                 </div>
               </div>
               <p class="place__info">
-                Jump off balcony, onto stranger's head. Chase ball of string
-                hide when guests come over. Being gorgeous with belly side up i
-                could pee on this.
+                Jump off balcony, onto stranger’s head. Chase ball of string
+                hide when guests come over. Being gorgeous with belly side up i
+                could pee on this.
               </p>
               <a href="" class="place__view-more-link">See more</a>
             </li>
@@ -340,9 +427,9 @@
                 </div>
               </div>
               <p class="place__info">
-                Jump off balcony, onto stranger's head. Chase ball of string
-                hide when guests come over. Being gorgeous with belly side up i
-                could pee on this.
+                Jump off balcony, onto stranger’s head. Chase ball of string
+                hide when guests come over. Being gorgeous with belly side up i
+                could pee on this.
               </p>
               <a href="" class="place__view-more-link">See more</a>
             </li>
@@ -363,9 +450,9 @@
                 </div>
               </div>
               <p class="place__info">
-                Jump off balcony, onto stranger's head. Chase ball of string
-                hide when guests come over. Being gorgeous with belly side up i
-                could pee on this.
+                Jump off balcony, onto stranger’s head. Chase ball of string
+                hide when guests come over. Being gorgeous with belly side up i
+                could pee on this.
               </p>
               <a href="" class="place__view-more-link">See more</a>
             </li>
@@ -386,9 +473,9 @@
                 </div>
               </div>
               <p class="place__info">
-                Jump off balcony, onto stranger's head. Chase ball of string
-                hide when guests come over. Being gorgeous with belly side up i
-                could pee on this.
+                Jump off balcony, onto stranger’s head. Chase ball of string
+                hide when guests come over. Being gorgeous with belly side up i
+                could pee on this.
               </p>
               <a href="" class="place__view-more-link">See more</a>
             </li>
