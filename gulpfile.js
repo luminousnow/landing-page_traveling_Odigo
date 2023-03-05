@@ -29,7 +29,7 @@ const rootFolder = path.basename(path.resolve());
 
 // paths
 const srcFolder = "./src";
-const buildFolder = "./docs";
+const buildFolder = "./dist";
 const paths = {
   srcSvg: `${srcFolder}/img/svg/**.svg`,
   srcImgFolder: `${srcFolder}/img`,
@@ -103,6 +103,7 @@ const styles = () => {
         overrideBrowserslist: ["last 5 versions"],
       })
     )
+    .pipe(gulpif(isProd, replace("../../img/", "../img/")))
     .pipe(
       gulpif(
         isProd,
@@ -311,7 +312,7 @@ const cache = () => {
 };
 
 const rewrite = () => {
-  const manifest = readFileSync("docs/rev.json");
+  const manifest = readFileSync("dist/rev.json");
   src(`${paths.buildCssFolder}/*.css`)
     .pipe(
       revRewrite({
@@ -330,6 +331,7 @@ const rewrite = () => {
 
 const htmlMinify = () => {
   return src(`${buildFolder}/**/*.html`)
+    .pipe(gulpif(isProd, replace("../img/", "img/")))
     .pipe(
       htmlmin({
         collapseWhitespace: true,
